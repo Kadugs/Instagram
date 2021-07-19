@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(238, 238, 238);
     margin-top: 54px;
@@ -49,6 +53,13 @@ img:hover,
     border: solid 1px rgb(211, 211, 211);
     border-radius: 3px;
 }
+.barra-pesquisa:focus {
+    outline: none;
+    text-align: start;
+    color: #262626;
+
+}
+
 .opcoes-topo {
     display: flex;
 }
@@ -123,14 +134,11 @@ img:hover,
 
 .seta {
     position: absolute;
-    color: rgb(0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 0.575) 5px 5px 5px;
-    font-size: 26px;
-    background: rgba(246, 1, 1, 0);
-    background-size: 0;
-    right: 10px;
+    color: white;
+    background-color: rgba(211, 211, 211, 0.287);
     border-radius: 50%;
-    box-sizing: border-box;
+    font-size: 26px;
+    right: 10px;
 }
 
 /*------------------ COLUNA DE POSTS  -----------------*/
@@ -247,6 +255,13 @@ img:hover,
     margin-left: 10px;
     font-size: 14px;
 }
+.add {
+    width: 300px;
+}
+.add:focus {
+    outline: none;
+    color: #262626;
+}
 .botao-publica {
     margin-right: 10px;
     background-color: inherit;
@@ -349,9 +364,6 @@ img:hover,
 /* VERSÃO MOBILE  */
 
 @media (max-width: 614px) {
-    * {
-        box-sizing: border-box;
-    }
     .topo {
         width: 100%;
     }
